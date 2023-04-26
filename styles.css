@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap');
+@import url('https://use.typekit.net/ire0hez.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #00333d;
+  font: 500 100%/1 'DM Sans', -apple-system, Helvetica, sans-serif;
+  margin: 0;
+  text-rendering: geometricPrecision;
+}
+
+.page {
+  padding: 4.5rem 0 3rem;
+}
+
+#header {
+  display: flex;
+  gap: 0.5rem;
+  padding: 12px 1rem;
+  width: 100vw;
+  white-space: nowrap;
+}
+.nav-button {
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 8px;
+  padding: 14px 1rem;
+}
+.nav-button svg {
+  font-size: 20px;
+}
+
+.active {
+  background: #00b39822;
+  color: #00b398;
+}
+.fill {
+  flex: 1;
+}
+
+/* not copied styles */
+
+h1,
+h2 {
+  font-family: new-kansas, serif;
+  margin: 0;
+}
+
+.logo {
+  height: 2.5rem;
+}
+
+#banner {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+#banner h2 {
+  font-weight: 400;
+}
+#stack {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2rem;
+  justify-content: center;
+}
+#watch {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-family: new-kansas, serif;
+  font-size: 1.5rem;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  opacity: 0.7;
+}
+#watch:hover {
+  opacity: 1;
+}
+#illo {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+#illo img {
+  max-width: 100%;
+}
+
+#popup {
+  align-items: center;
+  backdrop-filter: blur(4px);
+  background: #fffd;
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+#softbox {
+  border-radius: 1rem;
+  box-shadow: 0px 2rem 4rem -1rem #141d1b;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: calc(80vw * 9 / 16);
+  position: relative;
+  width: 80vw;
+}
+
+#softbox iframe {
+  border: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
