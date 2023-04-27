@@ -71,7 +71,7 @@ h2 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
 }
 #watch {
@@ -127,4 +127,17 @@ h2 {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+/* getwaitlist overrides */
+
+#getWaitlistContainer {
+  width: unset;
+}
+.gw-text-2xl,
+.gw-flex-row {
+  display: none;
+}
+.gw-p-7 {
+  padding: unset;
 }
