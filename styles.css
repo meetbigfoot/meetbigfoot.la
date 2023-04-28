@@ -60,6 +60,14 @@ h2 {
   height: 2.5rem;
 }
 
+a {
+  color: #a3ada9;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 #banner {
   display: flex;
   gap: 2rem;
@@ -102,10 +110,43 @@ h2 {
   max-width: 100%;
 }
 
+/* below the fold */
+
+#section {
+  padding: 2rem;
+}
+.center {
+  margin: auto;
+  max-width: 1200px;
+}
+.row {
+  align-items: baseline;
+  display: flex;
+}
+
+#cards {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.card {
+  background: #00333d11;
+  border-radius: 1rem;
+  flex: 1;
+  height: 384px;
+}
+
+#footer {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* popup */
+
 #popup {
   align-items: center;
   backdrop-filter: blur(4px);
-  background: #fffd;
+  background: #e9f3eedd;
   display: none;
   height: 100vh;
   justify-content: center;
@@ -144,4 +185,19 @@ h2 {
 }
 .gw-p-7 {
   padding: unset;
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+  #banner {
+    flex-direction: column;
+  }
+  #cards {
+    flex-wrap: wrap;
+  }
+  .card {
+    min-height: 24rem;
+    flex: 1 0 10rem;
+  }
 }
