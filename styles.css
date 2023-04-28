@@ -96,7 +96,9 @@ h2 {
   flex: 1;
   justify-content: center;
 }
-#illo img {
+#illo img,
+#illo video {
+  border-radius: 1rem;
   max-width: 100%;
 }
 
