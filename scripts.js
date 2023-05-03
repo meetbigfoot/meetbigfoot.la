@@ -7,7 +7,8 @@ g('watch').addEventListener('click', e => {
   const iframe = document.createElement('iframe')
   iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
   iframe.allowfullscreen = true
-  iframe.src = 'https://www.youtube.com/embed/At3kSthUM_k?autoplay=1'
+  iframe.src =
+    'https://res.cloudinary.com/bigfoot-cdn/video/upload/v1683137674/demo/littlefoot-teaser-draft-2-compressed_qadeai.mp4'
   g('softbox').appendChild(iframe)
 
   ScrollReveal().reveal('#softbox', {
