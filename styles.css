@@ -181,11 +181,19 @@ a:hover {
 #getWaitlistContainer {
   width: unset;
 }
+.gw-mt-4.gw-text-sm,
 .gw-flex-row {
   display: none;
 }
 .gw-p-7 {
   padding: unset;
+}
+
+#getWaitlistContainer input,
+#primaryCTA {
+  font-size: 17px;
+  padding: 1rem 1.5rem;
+  text-rendering: inherit;
 }
 
 /* responsive */
