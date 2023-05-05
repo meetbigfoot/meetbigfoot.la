@@ -165,7 +165,9 @@ a:hover {
   height: 12rem;
   left: 0;
   padding: 1.5rem;
+  /* perspective: 1px; same fix as translateZ(0) */
   position: absolute;
+  transform: translateZ(0);
   transition: bottom 0.4s cubic-bezier(0.9, 0, 0.1, 1);
   width: 100%;
   z-index: 1;
