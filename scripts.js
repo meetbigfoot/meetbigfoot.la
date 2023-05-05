@@ -14,7 +14,7 @@
 const g = document.getElementById.bind(document)
 const q = document.querySelectorAll.bind(document)
 
-ScrollReveal().reveal('h1, h2, #getWaitlistContainer, #watch, a', {
+ScrollReveal().reveal('h1, h2', {
   cleanup: true,
   container: '#stack',
   distance: '50%',
