@@ -1,0 +1,15 @@
+{
+  "name": "meetbigfoot.la",
+  "version": "1.0.0",
+  "description": "Mythical giant sighting: LA’s enigmatic new resident, urban debut.",
+  "main": "parse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "papaparse": "^5.4.1"
+  }
+}

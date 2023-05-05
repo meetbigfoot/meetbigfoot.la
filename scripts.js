@@ -23,3 +23,44 @@ ScrollReveal().reveal('h1, h2', {
 })
 
 q('video')[0].play()
+
+fetch('/la-cards.json')
+  .then(response => response.json())
+  .then(data =>
+    data.reverse().forEach(obj => {
+      const card = document.createElement('div')
+      card.className = 'card'
+      card.addEventListener('click', e => window.open(obj.url))
+
+      const img = document.createElement('div')
+      img.className = 'card-img'
+      img.style.backgroundImage = `url(${obj.photo})`
+      card.appendChild(img)
+
+      const info = document.createElement('div')
+      info.className = 'card-info'
+
+      const tag = document.createElement('div')
+      tag.className = 'card-tag'
+      tag.textContent = obj.category
+      info.appendChild(tag)
+
+      const title = document.createElement('h1')
+      title.className = 'card-title'
+      title.textContent = obj.title
+      info.appendChild(title)
+
+      const location = document.createElement('div')
+      location.className = 'card-location'
+      location.textContent = obj.location.split(',')[0]
+      info.appendChild(location)
+
+      const date = document.createElement('div')
+      date.className = 'card-date'
+      date.textContent = obj.date
+      info.appendChild(date)
+
+      card.appendChild(info)
+      g('cards').appendChild(card)
+    }),
+  )
