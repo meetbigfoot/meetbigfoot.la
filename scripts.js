@@ -24,7 +24,6 @@ ScrollReveal().reveal('h1, h2', {
 
 q('video')[0].play()
 
-/* disable cards for now
 fetch('/la-cards.json')
   .then(response => response.json())
   .then(data =>
@@ -65,4 +64,3 @@ fetch('/la-cards.json')
       g('cards').appendChild(card)
     }),
   )
- */
